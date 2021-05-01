@@ -1,0 +1,75 @@
+/* Цвет основного текста #212121 */
+/* Основной цвет фона #FFFFFF */
+/* Вторичный цвет текста #757575 */
+/* Вторичный цвет фона #2F303A */
+/* Цвет текста героя #FFFFFF */
+/* Цвет фона героя #2F303A */
+/* Цвет текста для "Web"(акцент) #2196F3 */
+/* Цвет текста лого #000000 */
+/* Цвет текста кнопки #FFFFFF */
+/* Фон кнопки #2196F3*/
+/* Цвет при ховере, фокусе кнопки #2196F3 */
+/* Фон при ховере, фокусе кнопки #FFFFFF*/
+/* Цвет ссылок при ховере, фокусе */
+
+:root {
+  --primary-text-color: #212121;
+  --primary-background-color: #ffffff;
+  --secondary-text-color: #757575;
+  --secondary-background-color: #2f303a;
+  --hero-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --web-color: #2196f3;
+  --logo-color: #000000;
+  --button-text-color: #ffffff;
+  --button-backgroung-color: #2196f3;
+  --button-hover-focus-color: #2196f3;
+  --button-hover-focus-background-color: #ffffff;
+  --link-hover-focus-color: #2196f3;
+}
+/* Тело страницы */
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Убираем ненависные точки у списков */
+.list {
+  list-style: none;
+}
+
+/* Шапка */
+.header-page {
+  background-color: var(--primary-background-color);
+}
+
+/* Логотип */
+.logo {
+  color: var(--logo-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Цвет для Web */
+.web {
+  color: var(--web-color);
+}
+
+/* Навигационные ссылки */
+.site-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+/* Навигационные ссылки при ховере и фокусе */
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--link-hover-focus-color);
+}
